@@ -1,1 +1,9 @@
-{ "name": "aq-prep-hold-scratch", "version": "1.0.0", "private": true, "scripts": { "dev": "node -e \"require('http').createServer((q,r)=>r.end('ok')).listen(process.env.PORT||3000)\"" } }
+{
+  "name": "aq-prep-hold-scratch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node -e \"require('http').createServer((q,r)=>r.end('ok')).listen(process.env.PORT||3000)\"",
+    "preinstall": "echo preinstall failing on purpose; exit 24"
+  }
+}
